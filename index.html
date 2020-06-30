@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <title>Sticky Footer Template · Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  <!-- Custom styles for this template -->
+  <link href="css/sticky-footer.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+  <!-- Begin page content -->
+  <main role="main" class="flex-shrink-0">
+    <div class="container">
+      <h1 class="mt-5">随机密码生成</h1>
+
+      <div class="div20"></div>
+
+      <div class="alert alert-danger" id="e-alert" role="alert">
+        错误！请打开JavaScript！
+      </div>
+
+      <div class="alert alert-success" id="s-alert" role="alert">
+        复制成功
+      </div>
+
+      <div class="div20"></div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <p>密码长度(1-99)：</p>
+          <div class="input-group mb-3">
+            <input type="number" class="form-control" id="password-size" name="size" placeholder="10" value="10"></input>
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-generate" onclick="generate()">生成</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkvalue-1" checked>
+            <label class="form-check-label" for="checkvalue-1">
+              数字
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkvalue-2" checked>
+            <label class="form-check-label" for="checkvalue-2">
+              大写字母
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkvalue-3" checked>
+            <label class="form-check-label" for="checkvalue-3">
+              小写字母
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkvalue-4">
+            <label class="form-check-label" for="checkvalue-4">
+              特殊符号
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="div20"></div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" id="password" placeholder="生成结果">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-copy" onclick="copy()">复制</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </main>
+
+  <footer class="footer mt-auto py-3">
+    <div class="container">
+      <span class="text-muted">2020 <a href="https://github.com/takuron">Takuron</a>@github</span>
+    </div>
+  </footer>
+
+
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+
+
+</html>
